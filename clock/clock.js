@@ -4,9 +4,8 @@ let  Seconds = document.getElementById('Sec');
 
 let currentTime = new  Date();
  
-const Hour=(()=>{
-    Hour.innerHtml = currentTime.getHours();
-})
+const Hour = ()=>{
+    Hours.innerHTML = currentTime.getHours();
+}
 
-Hours();
-
+Hour();
