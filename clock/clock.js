@@ -2,10 +2,12 @@ let Hours = document.getElementById('Hours');
 let Minutes = document.getElementById('Min');
 let  Seconds = document.getElementById('Sec');
 
-let currentTime = new  Date();
- 
-const Hour = ()=>{
-    Hours.innerHTML = currentTime.getHours();
-}
 
-Hour();
+
+setInterval(()=>{
+    let currentTime = new  Date();
+  
+    Hours.innerHTML = (currentTime.getHours()<10? "0":"") + currentTime.getHours();
+    Minutes.innerHTML = (currentTime.getHours()<10? "0":"") + currentTime.getMinutes();
+    Seconds.innerHTML = (currentTime.getHours()<10? "0":"") + currentTime.getSeconds();
+},1000)
