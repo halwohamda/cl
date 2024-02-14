@@ -3,7 +3,7 @@ let Minutes = document.getElementById('Min');
 let  Seconds = document.getElementById('Sec');
 
 let currentTime = new  Date();
- console.log(currentTime.getDay);
+ console.log(currentTime.getDay());
 // Hours.innerHTML = currentTime.getHours();
 // Minutes.innerHTML = currentTime.getMinutes();
 // Seconds.innerHTML = currentTime.getSeconds();
